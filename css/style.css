@@ -1,0 +1,99 @@
+.smallText {
+    font-size: 200%;
+}
+
+h1 {
+    font-size: 500%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.button-avocado {
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: right 55px bottom 0px; 
+ 
+    border-style: none;
+    height: 200px;
+}
+
+.button-avo-sad {
+    background-image: url( '../img/Cara triste celsius transp-01.png' );
+}
+.button-avo-midSad {
+    background-image: url( '../img/Cara medio triste celsius transp-01.png' );
+}
+.button-avo-midHappy {
+    background-image: url( '../img/Cara medio feliz celsius transp-01.png' );
+}
+.button-avo-happy {
+    background-image: url( '../img/Cara feliz celsius transp-01.png' );
+}
+
+.gradiens-logo {
+	background-image: url( '../img/gradiens_logo_trans.png' );
+	height: 300px;
+	width: 150px;
+}
+
+.celsius-bar {
+    height: 220px;
+    background-color: transparent;
+}
+
+.box {
+height: 100%;
+width: 100%;
+}
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 20px; 
+  color: #000;
+  background-color: LemonChiffon;
+  text-align: center;
+
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.esp {
+	
+}
+
+.eng{
+	font-style: italic;
+	color: #777777;
+
+}
+
+.vert-center {
+  position: relative;
+  top: 35%;
+  transform: translateY(-65%);
+}
