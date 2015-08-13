@@ -31,12 +31,6 @@ h1 {
     background-image: url( '../img/Cara feliz celsius transp-01.png' );
 }
 
-.gradiens-logo {
-	background-image: url( '../img/gradiens_logo_trans.png' );
-	height: 300px;
-	width: 150px;
-}
-
 .celsius-bar {
     height: 220px;
     background-color: transparent;
@@ -88,7 +82,7 @@ body {
 
 .eng{
 	font-style: italic;
-	color: #777777;
+	color: gray;
 
 }
 

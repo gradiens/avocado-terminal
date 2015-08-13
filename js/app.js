@@ -26,15 +26,6 @@ app.config(['$stateProvider', '$urlRouterProvider', '$ionicConfigProvider', func
             templateUrl: 'templates/logout.html',
             controller: 'logoutController'
         }) 
-	
-		.state('dennys', {
-			url: '/auto/dennys',
-			templateUrl: 'templates/auto-login-dennys.html',
-			controller: 'autoLoginDennysController'
-		})
-	
-
-
 
 
     // if none of the above states are matched, use this as the fallback

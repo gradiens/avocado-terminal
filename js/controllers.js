@@ -9,10 +9,10 @@ app.controller('loginCtrl', ['$scope', 'loginService', 'helperService', 'fbURL',
         password: "",
         name: ""
     };
-    $scope.logWithPass = function (inUser) {
+    $scope.logWithPass = function () {
         helperService.show('Ingresando...');
-        var email = inUser.email;
-        var password = inUser.password;
+        var email = this.user.email;
+        var password = this.user.password;
         if (!email || !password) {
             helperService.notify("Favor complete los campos");
             return false;
@@ -97,38 +97,5 @@ app.controller('logoutController', function ($scope, loginService) {
 	
 	console.log("Hi from logoutControlle!");
 	loginService.logout();
-	
-});
-
-app.controller('autoLoginDennysController', function ($scope, loginService, helperService) {
-	
-	console.log("Hi from autoLoginDennysController");
-	
-	 helperService.show('Ingresando...');
-        var email = 'prueba@dennys.com';
-        var password = 'prueba';
-        if (!email || !password) {
-            helperService.notify("Favor complete los campos");
-            return false;
-        }
-
-        loginService.auth.$authWithPassword({
-            email: email,
-            password: password
-        }).then(function (authData) {
-            helperService.hide();
-
-        }, function (error) {
-            helperService.hide();
-            if (error.code == 'INVALID_EMAIL') {
-                helperService.notify('Email incorrecto');
-            } else if (error.code == 'INVALID_PASSWORD') {
-                helperService.notify('Contraseña incorrecta');
-            } else if (error.code == 'INVALID_USER') {
-                helperService.notify('Usuario incorrecto');
-            } else {
-                helperService.notify('Oops, hay un problema. Favor avisarle a Chino');
-            }
-        });
 	
 });
